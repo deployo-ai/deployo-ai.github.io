@@ -1,0 +1,145 @@
+/* style.css */
+
+/* Import other CSS files */
+@import url('./css/colors.css');
+@import url('./css/font.css');
+@import url('./css/sm.css');
+@import url('./css/md.css');
+@import url('./css/lg.css');
+@import url('./css/animate.css');
+
+
+/* Global styles */
+html {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 70vw; /* or any other value you want */
+    }
+}
+
+
+
+/* @media (min-width: 1440px) {
+    .container {
+        width: 60vw !important;
+        margin: 0 auto !important;
+    }
+  } */
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.block{
+    display: block!important;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.pl-8{
+    padding-left: 8px;
+}
+
+.pr-8{
+    padding-right: 8px;
+}
+
+.items-center{
+    display: flex;
+    align-items: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.ta-center{
+    text-align: center;
+}
+
+.gray-400{
+    color: var(--gray-400);
+}
+
+.gradient-container{
+    background: var(--gradient-primary);
+    border-radius: var(--radius-8);
+    padding: 1px;
+   }
+
+   .gradient-body{
+    background: var(--bg);
+    border-radius: var(--radius-8);
+   }
+
+   .gradient-container-2{
+    background: var(--gradient-border);
+    border-radius: var(--radius-8);
+    padding: 1px;
+   }
+
+   .gradient-body-2{
+    background: var(--bg);
+    border-radius: var(--radius-8);
+   }
+
+
+
+.justify-c{
+    display: flex;
+    justify-content: center;
+}
+
+/* grid */
+
+.grid-container {
+    display: grid;
+    /* 3 columns for the first row */
+    gap: 16px; /* Space between the cards */
+    width: 100%;
+}
+
+.col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col-4{
+    grid-template-columns: repeat(4, 1fr);
+}

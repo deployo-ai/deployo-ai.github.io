@@ -1,0 +1,33 @@
+/* colors.css */
+
+:root {
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --success-color: #51b869; /* Green */
+    --danger-color: #dc3545; /* Red */
+    --warning-color: #ffc107; /* Yellow */
+    --info-color: #17a2b8; /* Blue */
+    --light-color: #f8f9fa; /* Light Gray */
+    --dark-color: #343a40; /* Dark Gray */
+    --white: #fff;
+    --black: #000;
+    --bg: #080B12;
+    --gradient-primary: linear-gradient(135deg, #3959E0 0%, #932BE4 100%);
+    --gradient-secondary: linear-gradient(271.75deg, #635371 -14.22%, #EDEDF2 50.45%, #635371 116.9%);
+    --gradient-border: linear-gradient(135deg, rgba(57, 89, 224, 0.5) 0%, rgba(147, 43, 228, 0.5) 18.5%, rgba(57, 89, 224, 0) 50%);
+    --gray-850: #1F2937;
+    --gray-700: #374151;
+    --gray-400: #9CA3AF;
+    --hover-gradient: linear-gradient(135deg, #3959E0 91%, #932BE4 100%);
+    ;
+
+
+    --radius-8: 8px;
+
+    --animate-delay: 0.25s !important;
+
+  }
+
+  .white{
+    color: var(--white);
+  }

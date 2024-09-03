@@ -1,0 +1,905 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* Adjust padding as needed */
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  background-color: #080b12cc;
+}
+
+
+.button-primary {
+  background: var(--gradient-primary);
+  color: var(--white);
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 1s !important;
+
+}
+
+.button-primary:hover {
+  background: var(--hover-gradient) !important;
+}
+
+
+.button-secondary {
+  position: relative;
+  /* Position relative for pseudo-element positioning */
+  background: none;
+  color: var(--white);
+  padding: 12px 24px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  /* Ensure that the pseudo-element does not overflow the button */
+}
+
+.features-btn {
+  border: none;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-8);
+  padding: 1px;
+  height: 43px;
+}
+
+.features-link {
+  background: var(--bg);
+  border-radius: var(--radius-8);
+  padding: 12px 24px;
+  transition: background-color 0.8s ease, transform 0.3s ease;
+}
+
+.features-link:hover {
+  background: var(--gradient-primary);
+}
+
+
+.logo {
+  width: 112px;
+  height: 32px;
+}
+
+/* form styles */
+
+
+.waitlist-form-left{
+  width: 50%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.waitlist-form-right{
+  width: 50%;
+  background: var(--gray-850);
+  display: flex;
+  align-items: center;
+}
+
+.quote-text{
+  font-style: italic;
+}
+
+
+.waitlist-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #080B12;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  z-index: 9999999;
+  display: none;
+  /* Initially hidden */
+
+}
+
+.waitlist-form.active {
+
+  display: flex;
+
+}
+
+.waitlist-container {
+  background: var(--gray-850);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  top: -100%;
+}
+
+
+.waitlist-container-active {
+  /* transition: top 0.5s ease-in-out; */
+  /* border: 1px solid var(--gray-700);
+  border-radius: var(--radius-8); */
+  width: 80%;
+  margin: auto;
+  /* position: relative;
+  top: 30%; */
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-header {
+  width: 100%;
+  padding: 20px;
+  /* border-bottom: 1px solid var(--gray-700); */
+}
+
+.form-1 {
+  width: 100%;
+  padding: 1rem;
+}
+
+.form-1 > input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #4B5563;
+  border-radius: var(--radius-8);
+  margin-bottom: 8px;
+  background: var(--gray-700);
+  color: var(--gray-400);
+}
+
+.form-1>input::placeholder {
+  color: var(--gray-400);
+}
+
+.form-success{
+  display: none;
+}
+
+.form-success-active{
+  display: block;
+}
+
+.d-none{
+  display: none !important;
+}
+
+.close-form {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.success {
+  background: var(--success-color);
+  padding: 12px 12px;
+  border-radius: var(--radius-8);
+  margin-bottom: 24px;
+  display: none;
+}
+
+.success-active {
+  display: unset;
+}
+
+.danger {
+  background: var(--danger-color);
+  padding: 12px 12px;
+  border-radius: var(--radius-8);
+  margin-bottom: 24px;
+  display: none;
+}
+
+.danger-active {
+  display: unset;
+}
+
+
+/* .waitlist-form {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .waitlist-form.active {
+    transform: translateY(0);
+  } */
+
+/* ... other form element styles ... */
+
+
+.hero-content {
+  padding: 0 5rem;
+  /* background-image: url('../assets/pattern.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  */
+}
+
+.hero-title {
+  background: var(--gradient-secondary);
+  /* Gradient colors */
+  -webkit-background-clip: text;
+  /* Clip the background to the text */
+  -webkit-text-fill-color: transparent;
+  /* Make the text color transparent */
+  background-clip: text;
+  /* For non-webkit browsers (still experimental) */
+  text-fill-color: transparent;
+  /* For non-webkit browsers (still experimental) */
+  margin-bottom: 0;
+}
+
+.hero-cta {
+  padding-top: 2rem;
+  padding-bottom: 9rem;
+}
+
+.npm-command-container {
+  width: 43%;
+  margin: auto;
+
+}
+
+.npm-command-wrapper {
+  padding: 0 16px;
+
+}
+
+.copy-icon {
+  cursor: pointer;
+}
+
+.hero-bg {
+  opacity: 0.8;
+  /* overflow: hidden; */
+  width: 95%;
+  margin: auto;
+  margin-top: -1.5rem !important;
+  position: relative;
+  z-index: -200;
+
+}
+
+.hero-bg-wrapper {}
+
+.hero-bg-img {
+  width: 100%;
+}
+
+.pattern {
+  display: flex;
+  justify-content: center;
+}
+
+.pattern-img {
+  position: absolute;
+  z-index: -9999;
+  top: 21rem;
+  width: 50vw;
+  opacity: 0.7;
+}
+
+.overly {
+  /* background: linear-gradient(180deg, rgba(8, 11, 18, 0) 5.28%, #080B12 80.09%);
+    overflow: hidden;
+    width: 96vw;
+    height: 524px;
+    position: absolute;
+    left: 0;
+    top: 65vh; */
+}
+
+
+
+.label-body {
+  border-radius: 99px !important;
+}
+
+.label-wrapper {
+  padding: 0px 4px;
+  border-radius: 99px !important;
+}
+
+.label-wrapper>img {
+  padding: 0px 8px;
+}
+
+.label-wrapper>p {
+  padding: 0px 8px 0 0;
+}
+
+.problem-title,
+.gradient-secondary-text {
+  background: var(--gradient-secondary);
+  /* Gradient colors */
+  -webkit-background-clip: text;
+  /* Clip the background to the text */
+  -webkit-text-fill-color: transparent;
+  /* Make the text color transparent */
+  background-clip: text;
+  /* For non-webkit browsers (still experimental) */
+  text-fill-color: transparent;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.padding-decs {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.problem-image {
+  overflow: hidden;
+  width: 90%;
+  padding-top: 6rem;
+  margin: auto;
+}
+
+.problem-image>img {
+
+  width: 100%;
+  pointer-events: none;
+  position: relative;
+  z-index: -999;
+}
+
+.features {}
+
+.features-content {
+  margin-top: -16rem;
+  position: relative;
+}
+
+.features-decs {
+  padding-bottom: 5rem;
+}
+
+#myVideo {
+  border-radius: var(--radius-8);
+}
+
+#myVideo2 {
+  border-radius: var(--radius-8);
+}
+
+
+#myVideo3 {
+  border-radius: var(--radius-8);
+}
+
+
+#myVideo4 {
+  border-radius: var(--radius-8);
+}
+
+.card>h4 {
+  padding: 0 24px;
+  margin-top: 10px;
+}
+
+.card>p {
+  padding: 0 24px;
+  padding-bottom: 24px;
+}
+
+.card{
+  width: 100%;
+}
+
+.card-image{
+  width: 100%;
+  height: 210px;
+}
+
+.card-image > img {
+  width: 100%;
+  height: auto;
+  /* max-height: ; */
+  object-fit: cover;
+}
+
+.card-icon-5 {
+  height: 13vw;
+}
+
+.col-2-container {
+  padding-top: 1rem;
+}
+
+.features-card {
+  padding-top: 3rem;
+}
+
+.dashboard-button {
+  color: var(--white);
+  background: none;
+  border: none;
+  padding: 12px 4rem 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.dashboard-button-active {
+  background: var(--gradient-primary);
+}
+
+.dashboard {
+  padding-top: 10rem;
+}
+
+.tab-sidebar {
+  padding-right: 3rem;
+}
+
+.tab-1-video {
+  margin-top:3rem;
+}
+
+.tab-1-title {
+  margin-top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visibile {
+  display: unset;
+}
+
+.key-card {
+  background: #0A0E15;
+  border-radius: var(--radius-8);
+  padding: 24px;
+}
+
+.key-image-1 {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  /* Adjust the height as needed */
+  position: relative;
+  /* For positioning the content */
+  background-image: url('../assets/key-card-1.webp');
+  /* Set the background image */
+  background-size: cover;
+  /* Ensure the image covers the element */
+  background-position: right center;
+  /* Position the image to the right */
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+}
+
+.key-image-2 {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  /* Adjust the height as needed */
+  position: relative;
+  /* For positioning the content */
+  background-image: url('../assets/key-card-2.webp');
+  /* Set the background image */
+  background-size: cover;
+  /* Ensure the image covers the element */
+  background-position: right center;
+  /* Position the image to the right */
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+}
+
+.key-image-3 {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  /* Adjust the height as needed */
+  position: relative;
+  /* For positioning the content */
+  background-image: url('../assets/key-card-3.webp');
+  /* Set the background image */
+  background-size: cover;
+  /* Ensure the image covers the element */
+  background-position: right center;
+  /* Position the image to the right */
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+}
+
+.key-image-4 {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  /* Adjust the height as needed */
+  position: relative;
+  /* For positioning the content */
+  background-image: url('../assets/key-card-4.webp');
+  /* Set the background image */
+  background-size: cover;
+  /* Ensure the image covers the element */
+  background-position: right center;
+  /* Position the image to the right */
+  background-repeat: no-repeat;
+  /* Prevent image repetition */
+}
+
+.key-card-wrapper {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.key-feature {
+  padding-top: 6rem;
+}
+
+.testimonials {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.testimonial-card-wrapper {
+  display: flex;
+  padding-top: 3rem;
+}
+
+
+
+
+.gradient-primary-text {
+  background: var(--gradient-primary);
+  /* Gradient colors */
+  -webkit-background-clip: text;
+  /* Clip the background to the text */
+  -webkit-text-fill-color: transparent;
+  /* Make the text color transparent */
+  background-clip: text;
+  /* For non-webkit browsers (still experimental) */
+  text-fill-color: transparent;
+  /* For non-webkit browsers (still experimental) */
+}
+
+.testimonial-card {
+  border: 1px solid var(--gray-850);
+  border-radius: var(--radius-8);
+  background: #0A0E15;
+  padding: 24px;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-name {
+  margin-bottom: 0;
+}
+
+.testimonial-position {
+  margin-top: 4px;
+}
+
+.waitlist {
+  border: 1px solid var(--gray-850);
+  border-radius: var(--radius-8);
+  padding: 24px;
+  position: relative;
+}
+
+.waitlist::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/waitlist-pattern.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Adjust as needed */
+  background-position: center;
+  /* Adjust as needed */
+  z-index: -1;
+  /* Ensure the pseudo-element is behind other content */
+  border-radius: var(--radius-8);
+  opacity: 0.5;
+}
+
+.waitlist-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.separator {
+  margin: 6rem 0 2rem 0;
+  background: linear-gradient(90deg, rgba(147, 43, 228, 0) 10%, #3959E0 30%, #932BE4 50%, #3959E0 70%, rgba(147, 43, 228, 0) 90%);
+  height: 1px;
+  width: 100%;
+  opacity: 0.4;
+
+}
+
+.footer {
+  display: flex;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-icons {
+  border-radius: 50% !important;
+  margin: 2rem 8px !important;
+  width: 50px;
+  height: 50px;
+}
+
+.social-icon-wrapper {
+  background: var(--bg);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.footer-right {
+  width: 50%;
+}
+
+.footer-right-wrapper {
+  border: 1px solid var(--gray-850);
+  border-radius: var(--radius-8);
+  padding: 24px;
+  margin-top: 3.5rem;
+}
+
+.footer-form {
+  display: flex;
+
+}
+
+.footer-form>input {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: var(--radius-8);
+  background: var(--bg);
+  color: var(--gray-400);
+}
+
+.footer-form>input::placeholder {
+  color: var(--gray-400);
+}
+
+.footer-btn {
+  padding: 0.9rem 1rem !important;
+  height: 100%;
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-8);
+  margin-left: 0.5rem;
+  color: var(--white);
+}
+
+.footer-decs {
+  margin: 0 !important;
+}
+
+.success1 {
+  background: var(--success-color);
+  padding: 12px 12px;
+  border-radius: var(--radius-8);
+  margin-bottom: 24px;
+  display: none;
+
+}
+
+.success1-active {
+  display: flex;
+}
+
+.danger1 {
+  background: var(--danger-color);
+  padding: 12px 12px;
+  border-radius: var(--radius-8);
+  margin-bottom: 24px;
+  display: none;
+
+}
+
+.danger1-active {
+  display: flex;
+}
+
+.show {
+  display: unset;
+}
+
+.visible {
+  display: unset;
+}
+
+
+.problem-decs-new {
+  width: 50vw;
+  margin: auto;
+  padding-top: 8px;
+}
+
+.features-top>img {
+  width: 100%;
+  pointer-events: none;
+  padding-top: 3rem;
+
+}
+
+
+.fearures-video-wrapper {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+.play-button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: var(--radius-8);
+  z-index: 10;
+  /* Ensures buttons are above the video */
+
+}
+
+.play-button-passive {
+  display: none;
+}
+
+.play-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.pause-button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: var(--radius-8);
+  z-index: 10;
+  /* Ensures buttons are above the video */
+  display: none;
+}
+
+.pause-button-active {
+  display: unset;
+}
+
+.pause-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#join-waitlist-btn-1 {
+  margin: 0 !important;
+}
+
+.hero-cta>button {
+  margin: 8px 6px;
+}
+
+#typewriter {
+  /* white-space: nowrap;*/
+  overflow: hidden; 
+  border-right: 3px solid white;
+  /* Blinking cursor */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+#typewriter.stop-blink {
+  animation: none;
+  border-right: 3px solid transparent;
+  /* Hide cursor when typing is complete */
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: white;
+  }
+}
+
+.anim-tv{
+  /* position: absolute;
+  width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  transform: scaleX(0); /* Start with the image scaled to zero width on X axis */
+  transform-origin: center; /* Ensure scaling happens from the center */
+  animation: openAnimation 1.5s forwards;
+}
+
+@keyframes openAnimation {
+  from {
+      transform: scaleX(0);
+  }
+  to {
+      transform: scaleX(1);
+  }
+}
+
+.features-title{
+  margin: 0;
+}
+
+.problem-decs{
+  opacity: 0.6;
+}
+
+.mt-15rem{
+  margin-top: 15rem;
+}
+
+.card{
+  background-color: #0A0E15 !important;
+}
+
+
+
+
+/*Hover Gradient*/
+
+
+
+/* scrool into view starts */
+
+
+.content {
+  /* height: 100vh; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.animated-div {
+  /* width: 200px;
+  height: 200px;
+  background: #3498db;
+  color: white; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* font-size: 1.5em;
+  text-align: center; */
+  transform: perspective(1000px) rotateX(20deg) scale(1);
+  transition: transform 0.3s ease-out; 
+}
+
+
+/* scrool into view ends */

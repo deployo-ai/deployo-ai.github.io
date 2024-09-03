@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Deployo</title>
+  <meta name="description" content="Be the first to experience Deployo, the revolutionary AI SaaS app. Join our waitlist and get early access.">
+  <meta name="keywords" content="AI SaaS, waitlist, Deployo, early access">
+  <meta name="author" content="Deployo">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Deployo - Join the Waitlist">
+  <meta property="og:description" content="Be the first to experience Deployo, the revolutionary AI SaaS app. Join our waitlist and get early access.">
+  <meta property="og:image" content="./assets/og-image.jpg">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deployo - Join the Waitlist">
+  <meta name="twitter:description" content="Be the first to experience Deployo, the revolutionary AI SaaS app. Join our waitlist and get early access.">
+  <meta name="twitter:image" content="./assets/og-image.jpg">
+
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="pattern">
+            <img  class="pattern-img" src="./assets/pattern.svg" alt="ripples effect">
+        </div>
+
+
+        <div class="waitlist-form">
+
+            <div class="waitlist-form-left">
+                <div>
+                    <img width="124px" height="32px"  src="./assets/logo.svg" alt="">
+                </div>
+                <div class="quote">
+                    <p class="quote-text text-xl white">“The deployment of AI is like planting seeds in a digital garden; with the right care, it will grow into something beyond imagination.”</p>
+                    <p class="quote-name white"> <span class="features-decs">Andrew Ng</span> - <span style="font-weight: bold;"> Head of Google Brain </span> </p>
+                </div>
+            </div>
+            <div  class="waitlist-form-right">
+                <img  class="close-form" src="./assets/close-icon.svg" alt="cross icon">
+                <div class="waitlist-container animate-on-scroll waitlist-anim">
+
+                    <div class="form-header none">
+                        <div class="waitlist-left items-center">
+                            <!-- <img  src="./assets/waitlist-icon.svg" alt="waitlist icon"> -->
+                            <div class="form-title text-2xl white">Join the Revolution</div>
+                        </div>
+                    <p class=" mt-none text-sm-400 white problem-decs">Embrace AI-Driven Transformation for Unparalleled Business Success</p>
+                    </div>
+    
+                    <form name="form-1" class="none1 form-1 flex-col">
+                        <div class="success white text-sm">
+                            Submitted Sucessfully
+                        </div>
+    
+                        <div class="danger white text-sm">
+                            An unknown error occured, please try again later
+                        </div>
+    
+                    <input class="text-sm-400" id="name" type="text" placeholder="Name" name="name" required>
+                    <input class="text-sm-400" type="email" placeholder="Professional Email" name="email" required>
+                    <input class="text-sm-400" type="text" placeholder="Company" name="company" required>
+                    <button id="submit" style="width: 50%; align-self: flex-end;" class="text-sm-400 button-primary" type="submit">Submit</button>
+                    </form>
+
+
+                    <div class="form-header form-success">
+                        <img  src="./assets/form-success.svg" alt="waitlist icon">
+                        <div class="waitlist-left items-center">
+                            
+                            <div class="form-title text-2xl white">Welcome to the Revolution!</div>
+                        </div>
+                    
+                    
+                    <p class=" mt-none text-sm-400 white problem-decs">We're thrilled you've taken the first step towards transforming your business. Your information has been received, and we'll be in touch shortly.</p>
+                    <a onclick="reload()" style="display: flex; justify-content: end; margin-top: 2rem;" href="#"><button class="button-primary text-sm-400">Back to Homepage</button></a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <!-- <div class="waitlist-container animate-on-scroll waitlist-anim">
+                <div class="form-header flex between ">
+                    <div class="waitlist-left items-center">
+                        <img  src="./assets/waitlist-icon.svg" alt="waitlist icon">
+                        <div class="form-title text-lg white pl-8">Join the Waitlist</div>
+                    </div>
+                
+                <img  class="close-form" src="./assets/close-icon.svg" alt="cross icon">
+                </div>
+
+                <form name="form-1" class="form-1 flex-col">
+                    <div class="success white text-sm">
+                        Submitted Sucessfully
+                    </div>
+
+                    <div class="danger white text-sm">
+                        An unknown error occured, please try again later
+                    </div>
+
+                <input class="text-sm-400" id="name" type="text" placeholder="Name" name="name" required>
+                <input class="text-sm-400" type="email" placeholder="Professional Email" name="email" required>
+                <input class="text-sm-400" type="text" placeholder="Company" name="company" required>
+                <button id="submit" style="width: 50%; align-self: flex-end;" class="text-sm-400 button-primary" type="submit">Submit</button>
+                </form>
+            </div> -->
+          </div>
+        
+        <nav class="navbar">
+            <div class="logo">
+              <img  width="124px" height="32px" src="./assets/logo.svg" alt="Deployo Logo">
+            </div>
+            <div class="nav-buttons">
+              <button onclick="activeForm()" class="join-waitlist-btn button-primary text-sm">Join Waitlist</button>
+            </div>
+          </nav>
+
+          <section class="hero">
+            <div class="hero-content">
+
+                <div class="hero-container flex-col items-center anim-1 animate-on-scroll">
+                    <h1 class="hero-title text-7xl text-5xl ta-center ta-left-sm">Transform Your AI Deployment Experience</h1>
+                    <p id="typewriter" class="hero-decs text-xl white"></p>
+
+                    <div class="hero-cta">
+                        <button onclick="activeForm()" id="join-waitlist-btn-1" class="button-primary text-sm" type="submit">Join the Revolution</button>
+                        <!-- <button class="text-sm features-btn t-target" type="submit"><a href="#features" class="features-link white">View Features</a></button> -->
+                    </div>
+                </div>  
+                
+                <div class="npm-command-container gradient-container" onclick="copyText()" style="cursor: pointer;">
+                    <div class="npm-command-wrapper flex between items-center gradient-body">
+                        <div class="npm-command flex">
+                           <img  src="./assets/arrow-icon.svg" alt="arrow icon">
+                           <p class="text-sm-ibm text-xsm-ibm white pl-8">npm install --save-dev Deployo</p> 
+                        </div>
+                        <div class="copy-icon">
+                            <img  src="./assets/copy-icon.svg" alt="copy icon" onclick="copyText()">
+                        </div>
+                        <div class="copy-success">
+                            <svg style="color: var(--success-color);" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd"/>
+                              </svg>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg content">
+                <div class=" hero-bg-wrapper animated-div">
+                    <img  class="hero-bg-img" src="./assets/hero-bg.webp" alt="dashboard of deployo application">
+                </div>
+            </div>
+          </section>
+
+          <section class="problem">
+            <div class="label justify-c justify-start-sm">
+                <img  class="label-l-icon pr-8" src="./assets/label-l-icon.svg" alt="label-icon">
+                <div class="label-body gradient-container">
+                    <div class="label-wrapper gradient-body justify-c">
+                        <img  src="./assets/problem-icon.svg" alt="">
+                        <p class="text-xsm white">Problem</p>
+                    </div>
+                </div>
+                <img  class="pl-8" src="./assets/label-r-icon.svg" alt="label-icon">
+            </div> 
+
+            <div class="problem-content anim-2 animate-on-scroll">
+                <h2 class="problem-title text-5xl ta-center ta-left-sm text-3xl-sm">Struggling with Complex AI Deployments?</h2>
+                <p class="problem-decs text-base ta-center ta-left-sm white text-sm-400-sm problem-decs-new">Deploying AI models shouldn't be a bottleneck. Traditional platforms are cumbersome, time-consuming, and demand high technical expertise, leading to inefficiencies and high costs.</p>
+            </div>
+
+            <div class="problem-image">
+                <img  src="./assets/problem-image.webp" alt="images of different terminals">
+            </div>
+          </section>
+
+          <section id="features" class="features">
+            
+            <div class="animTv features-top anim-grad animate-on-scroll ">
+                    <img class="animTvImg" src="./assets/features-top.webp" alt="gradient pattern">
+            </div>
+
+            <div class="anim-3 animate-on-scroll">
+            
+                <div class="features-content features-content-sm">
+                    <h2 class="features-title text-5xl ta-center ta-left-sm text-3xl-sm gradient-secondary-text">Meet Deployo</h2>
+                    <p class="features-decs text-base ta-center ta-left-sm white text-sm-400-sm problem-decs problem-decs-new">Deployo revolutionizes AI model deployment with a focus on seamless integration and efficiency. Our platform simplifies the process, boosting productivity and reducing costs, allowing you to focus on what matters most – innovation.</p>
+                </div>
+
+                <div class="features-video">
+                    <div class="fearures-video-wrapper">
+                        <!-- <video poster="./assets/hero-bg.webp" id="myVideo" height="100%" width="100%" preload="metadata">
+                            <source src="./assets/features-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> -->
+                        <img src="./assets/Placeholder-1.webp" alt="deployo dashboard" height="100%" width="100%">
+                        <!-- <img  src="./assets/play-icon.svg" alt="play button" class="play-button" onclick="togglePlay()">
+                        <img  src="./assets/pause-icon.svg" alt="pause icon" class="pause-button" onclick="togglePlay()"> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="label justify-c justify-start-sm mt-15rem mt-3rem-sm">
+                <img  class="label-l-icon pr-8" src="./assets/label-l-icon.svg" alt="label-icon">
+                <div class="label-body gradient-container">
+                    <div class="label-wrapper gradient-body justify-c">
+                        <img  src="./assets/key-icon.svg" alt="">
+                        <p class="text-xsm white">What you Get</p>
+                    </div>
+                </div>
+                <img  class="pl-8" src="./assets/label-r-icon.svg" alt="label-icon">
+            </div> 
+
+            <div class="problem-content">
+                <h2 class="problem-title text-5xl ta-center ta-left-sm text-3xl-sm">Revolutionize Your Business</h2>
+                <p class="problem-decs text-base ta-center ta-left-sm white text-sm-400-sm">Five Game-Changing Benefits of Intelligent Automation for Your Business</p>
+            </div>
+            
+            <div class="features-card">
+                <div class="card-wrapper ">
+
+                    <div class="grid-container col-3">
+
+                        <div class="gradient-border gradient-container-2 gradient-container-20 flex anim-4 animate-on-scroll">
+                            <div class="card gradient-body-2">
+                                <div class="card-image">
+                                    <img  src="./assets/card-icon-1.webp" alt="radar icon">
+                                </div>
+                                <p class="card-title text-2xl gradient-secondary-text special-card-text">Seamless Integration</p>
+                                <p class="card-decs text-base white">Easily integrate Deployo with your existing infrastructure and favorite ML tools.</p>
+                            </div>
+                        </div>
+
+                        <div class="gradient-container-2 gradient-container-21 flex anim-5 animate-on-scroll ">
+                            <div class="card gradient-body-2">
+                                <div class="card-image">
+                                    <img  src="./assets/card-icon-2.svg" alt="radar icon">
+                                </div>
+                                <p class="card-title text-2xl gradient-secondary-text">Efficiency Boost</p>
+                                <p class="card-decs text-base white">Experience up to 50% faster deployment times, allowing your team to innovate faster.</p>
+                            </div>
+                        </div>
+
+                        <div class="gradient-container-2 gradient-container-22 flex anim-6 animate-on-scroll">
+                            <div class="card gradient-body-2">
+                                <div class="card-image">
+                                    <img  src="./assets/card-icon-3.svg" alt="radar icon">
+                                </div>
+                                <p class="card-title text-2xl gradient-secondary-text">Cost Savings</p>
+                                <p class="card-decs text-base white">Optimize resources and reduce costs with our advanced cost management tools.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid-container col-2 col-2-container">
+
+                        <div class="gradient-container-2 gradient-container-24 flex anim-7 animate-on-scroll">
+                            <div class="card gradient-body-2">
+                                <div class="card-image">
+                                    <img  src="./assets/card-icon-4.svg" alt="radar icon">
+                                </div>
+                                <p class="card-title text-2xl gradient-secondary-text">Scalability</p>
+                                <p class="card-decs text-base white">Auto-scale your deployments effortlessly to meet growing demands.</p>
+                            </div>
+                        </div>
+
+                        <div class="gradient-container-2 gradient-container-25 flex anim-8 animate-on-scroll">
+                            <div class="card gradient-body-2">
+                                <div class="card-image">
+                                    <img  class="card-icon-5" src="./assets/card-icon-5.svg" alt="radar icon">
+                                </div>
+                                <p class="card-title text-2xl gradient-secondary-text">Security</p>
+                                <p class="card-decs text-base white">Ensure your data is protected with industry-leading security measures.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+            </div>
+          </section>
+
+          <section class="dashboard">
+            <div class="dashboard-wrapper flex flex-col-sm">
+                <div class="tab-sidebar flex-col flex-row-sm">
+                    <button onclick="tabChange1()" class="dashboard-button text-sm tab-1-btn">Dashboard</button>
+                    <button onclick="tabChange1()" class="dashboard-button text-sm tab-2-btn">Workflow</button>
+                    <button onclick="tabChange1()" class="dashboard-button text-sm tab-3-btn">Monitoring </button>
+                </div>
+
+                <div>
+                    <div class="tab-1 animate-on-scroll tab-anim">
+                        <p class="tab-1-title text-2xl ta-left-sm text-3xl-sm gradient-secondary-text">Real-Time Deployment Dashboard</p>
+                        <p class="tab-1-decs text-base white">See all your deployments at a glance with real-time updates and performance metrics.</p>
+                        <div class="features-video tab-1-video">
+                            <div class="fearures-video-wrapper">
+                                <!-- <video poster="./assets/hero-bg.webp" id="myVideo2" height="100%" width="100%" preload="metadata">
+                                    <source src="./assets/features-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video> -->
+                                <img src="./assets/Placeholder-2.webp" alt="deployo dashboard" height="100%" width="100%">
+                                <!-- <img  src="./assets/play-icon.svg" alt="play button" class="play-button play-button2" onclick="togglePlay2()">
+                                <img  src="./assets/pause-icon.svg" alt="pause icon" class="pause-button pause-button2" onclick="togglePlay2()"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-2 hidden animate-on-scroll tab-anim">
+                        <p class="tab-1-title text-2xl ta-left-sm text-3xl-sm gradient-secondary-text">Streamlined Deployment Workflow</p>
+                        <p class="tab-1-decs text-base white">Effortlessly set up and manage deployment workflows with our intuitive interface</p>
+                        <div class="features-video tab-1-video">
+                            <div class="fearures-video-wrapper">
+                                <!-- <video poster="./assets/hero-bg.webp" id="myVideo3" height="100%" width="100%" preload="metadata">
+                                    <source src="./assets/features-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video> -->
+                                <img src="./assets/Placeholder-3.webp" alt="deployo dashboard" height="100%" width="100%">
+                                <!-- <img  src="./assets/play-icon.svg" alt="play button" class="play-button play-button3" onclick="togglePlay3()">
+                                <img  src="./assets/pause-icon.svg" alt="pause icon" class="pause-button pause-button3" onclick="togglePlay3()"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-3 hidden animate-on-scroll tab-anim">
+                        <p class="tab-1-title text-2xl ta-left-sm text-3xl-sm gradient-secondary-text">Customized Real-Time Alerts</p>
+                        <p class="tab-1-decs text-base white">Stay informed with real-time alerts and notifications tailored to your needs</p>
+                        <div class="features-video tab-1-video">
+                            <div class="fearures-video-wrapper">
+                                <!-- <video poster="./assets/hero-bg.webp" id="myVideo4" height="100%" width="100%" preload="metadata">
+                                    <source src="./assets/features-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video> -->
+                                <img src="./assets/Placeholder-4.webp" alt="deployo dashboard" height="100%" width="100%">
+                                <!-- <img  src="./assets/play-icon.svg" alt="play button" class="play-button play-button4" onclick="togglePlay4()">
+                                <img  src="./assets/pause-icon.svg" alt="pause icon" class="pause-button pause-button4" onclick="togglePlay4()"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          </section>
+        
+          <section class="key-feature">
+
+            <div class="label justify-c justify-start-sm">
+                <img  class="label-l-icon pr-8" src="./assets/label-l-icon.svg" alt="label-icon">
+                <div class="label-body gradient-container">
+                    <div class="label-wrapper gradient-body justify-c">
+                        <img  src="./assets/key-icon.svg" alt="">
+                        <p class="text-xsm white">Key Feature</p>
+                    </div>
+                </div>
+                <img  class="pl-8" src="./assets/label-r-icon.svg" alt="label-icon">
+            </div> 
+
+            <div class="problem-content">
+                <h2 class="problem-title text-5xl ta-center ta-left-sm text-3xl-sm">Empower Your AI Journey</h2>
+                <p class="problem-decs text-base ta-center ta-left-sm white text-sm-400-sm">Discover how our platform simplifies AI deployment, maximizes performance, and optimizes costs</p>
+            </div>
+
+            <div class="key-card-wrapper grid-container col-4  anim-9 animate-on-scroll">
+                <div class="key-card">
+                    <div class="key-image-1"></div>
+                    <p class="key-card-title text-2xl gradient-secondary-text">AI Development Suite</p>
+                    <p class="key-card-decs white text-base">Advanced tools for efficient AI creation across skill levels.
+                    </p>
+                </div>
+                <div class="key-card">
+                    <div class="key-image-2"></div>
+                    <p class="key-card-title text-2xl gradient-secondary-text">Deployment & Scaling</p>
+                    <p class="key-card-decs white text-base">Rapid AI deployment with automated tools for seamless production.
+                    </p>
+                </div>
+                <div class="key-card">
+                    <div class="key-image-3"></div>
+                    <p class="key-card-title text-2xl gradient-secondary-text">Monitoring & Optimization</p>
+                    <p class="key-card-decs white text-base">Real-time insights and auto-optimization for peak AI performance.
+                    </p>
+                </div>
+                <div class="key-card">
+                    <div class="key-image-4"></div>
+                    <p class="key-card-title text-2xl gradient-secondary-text">Governance & Marketplace</p>
+                    <p class="key-card-decs white text-base">Ensure AI compliance and access pre-built solutions.
+                    </p>
+                </div>
+            </div>
+
+          </section>
+
+          <section class="testimonials">
+                        <div class="label justify-c justify-start-sm">
+                <img  class="label-l-icon pr-8" src="./assets/label-l-icon.svg" alt="label-icon">
+                <div class="label-body gradient-container">
+                    <div class="label-wrapper gradient-body justify-c">
+                        <img  src="./assets/testimonial-icon.svg" alt="">
+                        <p class="text-xsm white">Ready to Get Started?</p>
+                    </div>
+                </div>
+                <img  class="pl-8" src="./assets/label-r-icon.svg" alt="label-icon">
+            </div> 
+
+            <div class="problem-content">
+                <h2 class="problem-title text-5xl ta-center ta-left-sm text-3xl-sm">Customer Success Stories</h2>
+            </div>
+
+            <div class="testimonial-card-wrapper  anim-10 animate-on-scroll">
+
+                <div class="testimonial-card">
+                    <div>
+                        <img  src="./assets/quote-icon.svg" alt="quotation mark icon">
+                    </div>
+                    <div>
+                        <p class="testimonial-message text-2xl-400 gradient-secondary-text">Deployo transformed our deployment process. Integration was seamless, and we saw a 40% increase in efficiency within the first month.</p>
+                    </div>
+                    <div>
+                        <p class="testimonial-name text-xl gradient-primary-text bold">Jane Doe</p>
+                        <p class="testimonial-position text-base gradient-secondary-text">Head of AI, TechCorp</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div>
+                        <img  src="./assets/quote-icon.svg" alt="quotation mark icon">
+                    </div>
+                    <div>
+                        <p class="testimonial-message text-2xl-400 gradient-secondary-text">The real-time monitoring and cost management tools have saved us countless hours and resources. Deployo is a game-changer.</p>
+                    </div>
+                    <div>
+                        <p class="testimonial-name text-xl gradient-primary-text bold">John Smith</p>
+                        <p class="testimonial-position text-base gradient-secondary-text">Data Scientist, InnovateAI</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+          </section>
+
+          <section class="waitlist anim-11  animate-on-scroll">
+            <div class="problem-content">
+                <h2 class="problem-title text-5xl ta-center ta-left-sm text-3xl-sm">Be the first to experience <span class="deployo-text deployo-ibm-2xl gradient-primary-text"> Deployo. </span></h2>
+                <p class="problem-decs text-base ta-center ta-left-sm white text-sm-400-sm">Join our beta program and transform your AI deployment process <br>
+                    Get exclusive early access to Deployo and start seeing results today.</p>
+            </div>
+
+            <div class="waitlist-btn">
+                <button onclick="activeForm()" id="" class=" button-primary text-sm" type="submit">Join the Revolution</button>
+            </div>  
+
+
+          </section>
+          
+          <section class="separator"></section>
+
+          <footer class="footer anim-12  animate-on-scroll">
+            <div class="footer-left">
+                <p class="footer-title text-3xl gradient-secondary-text">Learn more about our mission and the team behind Deployo.</p>
+                <p class="footer-decs text-base gray-400">Have questions? Get in touch with us at support@deployo.ai or call us at 1-800-DEPLOY.</p>
+                <div class="social-links">
+                    <div class="gradient-container social-icons"><a href="#" ><img  class="social-icon-wrapper" src="./assets/linkedin-icon.svg" alt="linkedin icon"></a></div>
+                    <div class="gradient-container social-icons"><a href="#"><img   class="social-icon-wrapper" src="./assets/x-icon.svg" alt="x icon"></a></div>
+                    <div class="gradient-container social-icons"><a href="#"><img   class="social-icon-wrapper" src="./assets/facebook-icon.svg" alt="facebook icon"></a></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-wrapper">
+
+                        <div class="success1 white text-sm">
+                            Submitted Sucessfully
+                        </div>
+    
+                        <div class="danger1 white text-sm">
+                            An unknown error occured, please try again later
+                        </div>
+                    <form name="footer-form" class="footer-form">
+                        <input class="text-sm-400" type="email" placeholder="Email Address" name="email" required>
+                        <button id="" class="footer-btn text-sm" type="submit">Signup</button>
+                    </form>
+                    <p class="text-xsm gray-400">For more details, review our Privacy Policy.</p>
+                </div>
+            </div>
+          </footer>
+    </div>
+
+    <!-- Scripts Loading -->
+    <script src="./script.js"></script>
+</body>
+</html>

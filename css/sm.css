@@ -1,0 +1,254 @@
+@media (max-width: 767px) {
+    /* Styles for mobile devices */
+
+    /* global styles */
+
+    .text-4xl{
+        font-family: var(--font-primary);
+        font-weight: 700;
+    }
+
+    .ta-left-sm{
+        text-align: left!important;
+    }
+
+    /* global styles */
+
+    .container{
+        width: 100vw!important;
+        padding: 0 16px;
+    }
+
+    .navbar{
+        padding: 20px 0!important;
+    }
+
+    .hero-content{
+        padding: 0!important;
+    }
+
+    .hero-title{
+        font-size: 36px;
+    }
+    .hero-content{
+        padding: 0;
+    }
+
+    .button-primary{
+        padding: 13px 16px!important;
+    }
+
+    .text-xsm-ibm{
+        font-family: var(--font-secondary);
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      .npm-command-container{
+        width: 310px !important;
+    
+      }
+
+      .npm-command-wrapper{
+        padding: 0 8px!important;
+    
+      }
+
+      .pattern-img{
+        top: 21rem;
+        width: 100vw!important;
+        opacity: 0.7!important;
+       }
+
+       .hero-cta{
+        padding-bottom: 5rem!important;
+      }
+
+      .overly{
+        top: 80vh!important;
+        height: 170px!important;
+      }
+
+      .text-3xl-sm{
+        font-family: var(--font-primary);
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .text-sm-400-sm{ 
+        font-family: var(--font-primary);
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .label-l-icon{
+        display: none;
+      }
+
+      .justify-start-sm {
+        display: flex;
+        justify-content: flex-start!important;
+    }
+
+
+    .problem-image{
+        width: 100%!important;
+        padding-top: 4rem!important;
+      }
+
+      .features-content-sm{
+        margin-top: -5rem!important;
+      }
+
+      /* .play-button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -280%) !important;
+
+    }
+
+    .pause-button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -280%) !important;
+
+    } */
+
+    .features-decs{
+        padding-bottom: 24px !important;
+      }
+
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr) !important; /* 2 columns on small screens */
+    }
+
+    .features-card{
+        padding-top: 2rem !important;
+      }
+
+      .mt-3rem-sm{
+        margin-top: 6rem !important;
+      }
+
+      .card-icon-5 {
+        height:auto !important;
+      }
+
+      .flex-row-sm{
+        display: flex!important;
+        flex-direction: row !important;
+        justify-content: center !important;
+      }
+
+      .flex-col-sm{
+        display: flex !important;
+        flex-direction: column !important;
+
+      }
+
+      .dashboard-button{ 
+        padding: 12px 12px 12px 12px !important;
+      }
+
+      .tab-sidebar {
+        padding-right: 0 !important;
+        padding-bottom: 1rem;
+    }
+    .testimonial-card-wrapper {
+        display: block !important;
+
+      }
+
+      .testimonial-card{
+        margin: 0 !important;
+        margin-bottom: 2rem !important;
+
+      }
+
+      .deployo-ibm-2xl{
+        font-size: 32px !important;
+
+      }
+
+      .waitlist-btn{
+        display: flex;
+        justify-content: start !important;
+      }
+
+      .footer{
+        display: flex;
+        flex-direction: column-reverse !important;
+      }
+
+      .footer-right{
+        width: 100% !important;
+      }
+
+      .footer-form {
+        display: flex ;
+        flex-direction: row !important;
+      }
+      .footer-btn{
+        /* margin: 1rem 4rem  !important; */
+      }
+
+      .problem-decs-new{
+        width: 85% !important;
+        margin: 0 !important;
+        padding-top: 8px;
+      }
+
+      .footer-form > input{
+        width: 75%;
+      }
+
+      .hero-container{
+        align-items: start !important;
+      }
+
+      #typewriter {
+        border-right: none !important;
+
+      }
+
+      .waitlist-form-left{
+        display: none  !important;
+      }
+      
+      .waitlist-form-right{
+        width: 100% !important;
+      }
+
+      .waitlist-container-active {
+        transition: top 0.5s ease-in-out !important; 
+        border: 1px solid var(--gray-700) !important;
+        border-radius: var(--radius-8) !important; 
+        width: 95% !important; 
+      }
+      
+      .form-header {
+        border-bottom: 1px solid var(--gray-700) !important; 
+        padding-bottom: 0 !important;
+      }
+
+      .mt-none{
+        margin-top: 6px !important;
+      }
+
+      .card-image{
+        height: auto !important;
+      }
+
+      .animated-div {
+        transform: none !important;
+      }
+
+      .hero-bg {
+
+        overflow: hidden !important; 
+      }
+      
+      .tab-1-video{
+        margin-top: 2rem !important;
+      }
+  }
